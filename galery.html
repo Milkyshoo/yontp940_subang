@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yontp 940 JN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo"><strong>YONIF TP 940</strong></div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#features">Layanan</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="./galery.html">Berita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Berita Acara Terkini</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <a href="https://detikglobalnews.com/panglima-tni-tinjau-yonif-tp-940-jaya-nagara-di-subang-jawa-barat/"><img class="image" src="./ft Panglima.jpg" alt=""></a>
+                    <h3>Kunjungan Panglima</h3>
+                    <p>Puspen TNI – Panglima TNI Jenderal TNI Agus Subiyanto melaksanakan kunjungan kerja ke Yonif TP 940/Jaya Nagara yang berlokasi di Desa Kumpay, Kecamatan Jalancagak, Kabupaten Subang, Jawa Barat, Senin (13/4/2026). Kunjungan ini merupakan bagian dari upaya untuk memastikan kesiapan prajurit Yonif TP 940/Jaya Nagara dalam menghadapi berbagai tugas ke depan.</p>
+                </div>
+                <div class="feature-card">
+                    <a href="https://www.lampusatu.com/tni/yonif-tp-940-jaya-negara-resmi-hadir-di-subang-kang-akur-tekankan-kolaborasi-untuk-kemajuan-daerah/#google_vignette"><img class="image" src="./Peresmian YONTP 940 Subang.webp" alt=""></a>
+                    <h3>Kolaborasi Peresmian YONIF TP 940 Subang</h3>
+                    <p>SUBANG,Lampusatu.com – Pemerintah Kabupaten Subang resmi menerima kehadiran Batalyon Infanteri Teritorial Pembangunan 940/Jaya Negara (Yonif TP 940/JN) dalam sebuah seremoni yang digelar di Aula Oman Syahroni, Rabu (22/4/2026).</p>
+                </div>
+                <div class="feature-card">
+                    <a href="https://nusantara.media/tni-ad-korem-083baladhika-jaya-malang-gelar-buka-puasa-bersama-anak-yatim-perkuat-silaturahmi-dan-kepedulian-di-bulan-ramadhan-2026"><img class="image" src="./Ramadhan.jfif" alt=""></a>
+                    <h3>Menyambut Bulan Suci Ramadhan</h3>
+                    <p>Aktivitas Yonif TP 940/Jaya Negara: Pada awal Maret 2026, prajurit Yonif TP 940/Jaya Negara melaksanakan kegiatan keagamaan, termasuk persiapan kesiapsiagaan dan kegiatan ibadah lainnya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak Kami</h2>
+            <div class="contact-content">
+                <p>Silakan hubungi kami untuk informasi lebih lanjut atau kerjasama.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Alamat</h3>
+                        <p>Makodam X/Giwangkara<br>
+                        Jl. Tentara Pelajar No. 1<br>
+                        Yogyakarta</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Telepon</h3>
+                        <p>(0274) 123456<br>
+                        0812-3456-7890</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>info@yonif940.mil.id<br>
+                        yonif940.jayanegara@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yonif TP 940 Jaya Negara. Hak Cipta Dilindungi. TNI AD - SIAP TEMPUR!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efek parallax hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
